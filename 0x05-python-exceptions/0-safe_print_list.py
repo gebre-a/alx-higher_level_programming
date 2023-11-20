@@ -1,13 +1,24 @@
 #!/usr/bin/python3
 
 def safe_print_list(my_list=[], x=0):
+    """safe print of the list
+
+    Args:
+        my_list: the list
+        x: the number of elemnt to print
+
+    Returns:
+        the number of the element printed truly
+    """
+    if my_list is None or x < 0:
+        return (0)
+    i = 0
     try:
-        n = 0
-        for i in range(0, x):
+        while i < x:
             print("{}".format(my_list[i]), end="")
-            n += 1
+            i += 1
     except IndexError:
-        pass
-    finally:
-        print()
-        return n
+        print("")
+        return (i)
+    print("")
+    return (i)
