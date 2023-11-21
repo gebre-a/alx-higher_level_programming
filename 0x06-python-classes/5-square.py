@@ -4,7 +4,7 @@
 
 class Square:
     """
-    Class that defines properties of square. 
+    Class that defines properties of square.:wq
 
         size: size of a square (1 side).
     """
@@ -16,7 +16,7 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Calculatte squares area.
+        """Calculates the area of square.
 
         Returns: the current square area.
         """
