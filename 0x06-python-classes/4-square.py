@@ -6,7 +6,7 @@ class Square:
     """
     Class that defines properties of square.
 
-            size: size of a square (1 side).
+        size: size of a square (1 side).
     """
     def __init__(self, size=0):
         """Creates new instances of square.
@@ -16,7 +16,7 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Calculate squares area.
+        """Calculates the area of square.
 
         Returns: the current square area.
         """
@@ -32,7 +32,6 @@ class Square:
     def size(self, value):
         """Property setter for size.
 
-       
             value (int): size of a square (1 side).
 
             TypeError: size must be an integer
