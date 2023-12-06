@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+"""write_file module.
 
-"""Write a function that reads a text file (UTF8) and prints it to stdout."""
+Contains a function that writes a text file.
+"""
 
 
-def read_file(filename=""):
-    """Print the contents of a UTF8 text file to stdout."""
-    with open(filename, encoding="utf-8") as f:
-        print(f.read(), end="")
+def write_file(filename="", text=""):
+    """
+    Writes a string to a text file (UTF8) and
+    returns the number of characters written.
+    """
+    with open(filename, 'w') as f:
+        return f.write(text)
